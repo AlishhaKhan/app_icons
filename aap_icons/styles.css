@@ -1,0 +1,133 @@
+/* General styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Icon base style */
+.app-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.app-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Facebook Icon */
+.facebook-icon {
+    background-color: #3b5998;
+    position: relative;
+}
+
+.facebook-icon::before {
+    content: "F";
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Instagram Icon */
+.instagram-icon {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 40%, #d6249f 60%, #285AEB 90%);
+    position: relative;
+}
+
+.instagram-icon::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+}
+
+.instagram-icon::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fd5949;
+    position: absolute;
+}
+
+/* Snapchat Icon */
+.snapchat-icon {
+    background-color: #FFFC00; /* Snapchat Yellow */
+    position: relative;
+}
+
+.snapchat-icon::before {
+    content: "👻"; /* Ghost emoji as Snapchat symbol */
+    font-size: 36px;
+    color: #000; /* Black ghost symbol */
+}
+
+/* Twitter Icon */
+.twitter-icon {
+    background-color: #1DA1F2;
+    position: relative;
+}
+
+.twitter-icon::before {
+    content: "T";
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+/* LinkedIn Icon */
+.linkedin-icon {
+    background-color: #0077B5;
+    position: relative;
+}
+
+.linkedin-icon::before {
+    content: "L";
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+/* GitHub Icon */
+.github-icon {
+    background-color: #333;
+    position: relative;
+}
+
+.github-icon::before {
+    content: "G";
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+/* YouTube Icon */
+.youtube-icon {
+    background-color: #FF0000;
+    position: relative;
+}
+
+.youtube-icon::before {
+    content: "▶";
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
